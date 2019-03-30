@@ -1,0 +1,24 @@
+.item {
+  max-width: 400px;
+  text-align: left;
+}
+
+.item.right {
+  justify-self: right;
+}
+
+.item.left {
+  justify-self: left;
+}
+
+.item-title {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 49px;
+  margin-bottom: 30px;
+}
+
+.item-description {
+  font-size: 16px;
+  line-height: 26px;
+}

@@ -1,21 +1,47 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from 'react'
+import {
+  Header,
+  HowItWorks,
+  SEO,
+  FeatureSection,
+  FeaturedItem,
+} from '../components'
 
 const IndexPage = () => (
-  <Layout>
+  <React.Fragment>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Header />
+    <HowItWorks />
+    <FeatureSection>
+      <FeaturedItem title="Create Pools" align="right">
+        Easily create shift trading pools by department, position, or skill set.
+      </FeaturedItem>
+    </FeatureSection>
+    <FeatureSection reverse>
+      <FeaturedItem
+        title="Send Blasts"
+        align="left"
+      >
+        One button offers up a shift to everyone. The first person to claim it,
+        gets it!
+      </FeaturedItem>
+    </FeatureSection>
+    <FeatureSection >
+      <FeaturedItem title="Quotas" align="right">
+        Managers can request multiple workers for a single shift, and the offer
+        will remain open until all slots are filled.
+      </FeaturedItem>
+    </FeatureSection>
+    <FeatureSection reverse>
+      <FeaturedItem
+        title="Managers Have Control"
+        align="left"
+      >
+        Managers decide who is allowed to offer shifts, and they can approve or
+        reject trades between workers.
+      </FeaturedItem>
+    </FeatureSection>
+  </React.Fragment>
 )
 
 export default IndexPage

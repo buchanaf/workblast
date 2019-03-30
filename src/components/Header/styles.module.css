@@ -1,0 +1,46 @@
+.header {
+  background-color: rgb(22, 82, 240);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.outer {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+
+.inner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  margin-top: auto;
+  font-size: 70px;
+}
+
+.downloads {
+  display: flex;
+  margin-top: auto;
+}
+
+.link {
+  height: 40px;
+  width: 120px;
+}
+
+.link:first-of-type {
+  margin-right: 40px;
+}
+
+.image {
+  height: 100%;
+  max-width: none;
+}

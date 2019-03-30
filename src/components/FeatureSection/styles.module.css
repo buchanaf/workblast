@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.reverse {
+  grid-template-columns: 3fr 2fr;
+}
+
+.container.secondary {
+  background-color: rgb(22, 82, 240);
+  color: #fff;
+}
+
+.image-wrapper.reverse {
+  grid-column: 1;
+  grid-row: 1;
+}
