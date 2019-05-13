@@ -1,6 +1,6 @@
 .item {
   max-width: 400px;
-  text-align: left;
+  text-align: center;
 }
 
 .item.right {
@@ -21,4 +21,10 @@
 .item-description {
   font-size: 16px;
   line-height: 26px;
+}
+
+@media only screen and (min-width: 600px) {
+  .item {
+    text-align: left;
+  }
 }

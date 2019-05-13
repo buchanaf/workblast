@@ -1,13 +1,18 @@
 .container {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr;
   margin-top: 40px;
   justify-content: center;
   align-items: center;
 }
 
 .container.reverse {
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr;
+}
+
+.image-wrapper {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .container.secondary {
@@ -15,7 +20,22 @@
   color: #fff;
 }
 
-.image-wrapper.reverse {
-  grid-column: 1;
-  grid-row: 1;
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .container.reverse {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .image-wrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .image-wrapper.reverse {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }

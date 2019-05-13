@@ -35,7 +35,10 @@ export default ({ children, reverse, secondary }) => {
         return (
           <Section
             align="center"
-            innerClassName={cx(styles.container, { [styles.reverse]: reverse, [styles.secondary]: secondary })}
+            innerClassName={cx(styles.container, {
+              [styles.reverse]: reverse,
+              [styles.secondary]: secondary,
+            })}
           >
             {children}
             <div
