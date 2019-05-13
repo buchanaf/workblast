@@ -22,8 +22,8 @@ export default ({ children, reverse, secondary }) => {
           }
           left: file(relativePath: { eq: "phone-left.png" }) {
             childImageSharp {
-              fluid(maxWidth: 600) {
-                ...GatsbyImageSharpFluid
+              fluid(maxWidth: 600, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
