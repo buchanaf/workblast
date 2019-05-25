@@ -11,7 +11,7 @@ import {
 
 const IndexPage = () => (
   <React.Fragment>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="WorkBlast - Shift Trading" keywords={[`gatsby`, `application`, `react`]} />
     <Header />
     <HowItWorks />
     <FeatureSection>
