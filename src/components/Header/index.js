@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { Section } from '../index'
 import AppleDownload from '../../assets/images/apple.svg'
 import GoogleDownload from '../../assets/images/google-play.png'
+import Logo from '../../assets/images/logo.png'
 
 import styles from './styles.module.css'
 
@@ -10,7 +11,11 @@ export default () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link to="/" className={styles.navLink}>WorkBlast</Link>
+        <div className={styles.navInner}>
+          <Link to="/" className={styles.navLink}>
+            <img className={styles.logo} src={Logo} alt="Logo" />
+          </Link>
+        </div>
       </nav>
       <Section
         align="center"
