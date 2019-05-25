@@ -6,12 +6,16 @@ import {
   HowItWorks,
   SEO,
   ContactForm,
-  FooterSection
+  FooterSection,
 } from '../components'
 
 const IndexPage = () => (
   <React.Fragment>
-    <SEO title="WorkBlast - Shift Trading" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="WorkBlast - Shift Trading"
+      keywords={[`work`, `shift trading`, `scheduling`]}
+      description="WorkBlast takes all the hassle out of offering and picking up shifts."
+    />
     <Header />
     <HowItWorks />
     <FeatureSection>
