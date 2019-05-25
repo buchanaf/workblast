@@ -9,11 +9,17 @@ const cx = classnames.bind(styles)
 export default () => {
   return (
     <Section outerClassName={styles.outer} innerClassName={styles.inner}>
-      <h2 className={styles.title}>
-        Contact Us
-      </h2>
-      <form className={styles.form} name="leads" method="POST" netlify netlify-honeypot="bot-field">
+      <h2 className={styles.title}>Contact Us</h2>
+      <form
+        className={styles.form}
+        name="leads"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/success"
+      >
         <input type="hidden" name="form-name" value="leads" />
+        <input type="hidden" name="bot-field" />
         <div className={styles.row}>
           <label className={styles.label}>Name:</label>
           <Input type="text" name="name" required />
@@ -31,7 +37,9 @@ export default () => {
           <textarea className={styles.textarea} name="message" />
         </div>
         <div className={cx(styles.row, styles.rowCenter)}>
-          <button className={styles.button} type="submit">Send</button>
+          <button className={styles.button} type="submit">
+            Send
+          </button>
         </div>
       </form>
     </Section>
