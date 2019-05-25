@@ -12,7 +12,7 @@ export default () => {
       <h2 className={styles.title}>
         Contact Us
       </h2>
-      <form className={styles.form} name="contact" method="POST" data-netlify="true">
+      <form className={styles.form} name="lead-form" method="POST" netlify netlify-honeypot="bot-field">
         <div className={styles.row}>
           <label className={styles.label}>Name:</label>
           <Input type="text" name="name" required />
