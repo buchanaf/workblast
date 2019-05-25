@@ -3,6 +3,7 @@ module.exports = {
     title: `WorkBlast - Shift Trader`,
     description: `WorkBlast takes all the hassle out of offering and picking up shifts.`,
     author: `Matt Hill`,
+    siteUrl: 'https://getworkblast.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
